@@ -8,11 +8,6 @@
 .funnel-chart {
   position: relative;
 }
-.funnel-chart > li {
-  height: 60px;
-  text-align: center;
-}
-
 .funnel-chart:before ,
 .funnel-chart:after {
   position: absolute;
@@ -37,6 +32,15 @@
   border-right-color: #fff;
 }
 
+
+.funnel-chart > li {
+  height: 60px;
+  text-align: center;
+
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
 .funnel-chart > li:first-child {
   background-color: #1398db;
   color: #fff;
@@ -58,28 +62,20 @@
   color: #fff;
 }
 
-.funnel-chart > li.column-2 {
-  display: -moz-box;
-  display: -webkit-box;
-  display: box;
-}
-.funnel-chart > li.column-2 > div.left ,
-.funnel-chart > li.column-2 > div.right {
+
+.funnel-chart > li > div {
+  padding: 0 10px;
+  line-height: 60px;
+
   -moz-box-flex: 1.0;
   -webkit-box-flex: 1.0;
   box-flex: 1.0;
 }
-.funnel-chart > li.column-2 > div.left {
+.funnel-chart > li > div.left {
   background-color: #12dba5; /* #40eabd */
   text-align: right;
-  padding-right: 10px;
 }
-.funnel-chart > li.column-2 > div.right {
+.funnel-chart > li > div.right {
   background-color: #40eabd;
   text-align: left;
-  padding-left: 10px;
-}
-
-.funnel-chart > li > div {
-  line-height: 60px;
 }
