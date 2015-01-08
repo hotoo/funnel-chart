@@ -1,16 +1,16 @@
 {
   "name": "funnel",
   "version": "0.2.0",
-  "description": "Funnel Charts via HTML.",
-  "keywords": [],
-  "homepage": "",
+  "description": "Funnel Charts via HTML and CSS3.",
+  "keywords": ["Funnel", "Chart", "漏斗图"],
+  "homepage": "https://github.com/hotoo/funnel-chart",
   "author": "hotoo <hotoo.cn@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:hotoo/funnel-chart.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/hotoo/funnel-chart/issues"
   },
   "licenses": "MIT",
   "spm": {
