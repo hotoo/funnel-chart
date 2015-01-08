@@ -6,76 +6,110 @@
   padding: 0;
 }
 .funnel-chart {
-  position: relative;
+  margin: 0 30px;
+  max-width: 680px;
+  min-width: 400px;
 }
-.funnel-chart:before ,
-.funnel-chart:after {
-  position: absolute;
-  content: " ";
-  border-width: 300px 100px 0;
-  border-style: solid;
-  border-color: transparent;
-  display: block;
-  line-height: 0;
-  width: 0;
-  height: 0;
-  line-height: 0;
-}
-.funnel-chart:before {
-  top: 0;
-  left: 0;
-  border-left-color: #fff;
-}
-.funnel-chart:after {
-  top: 0;
-  right: 0;
-  border-right-color: #fff;
+.funnel-chart.margined > li {
+  margin: 5px auto;
 }
 
 
 .funnel-chart > li {
   height: 60px;
   text-align: center;
+  position: relative;
+  margin: 0 auto;
 
   display: -moz-box;
   display: -webkit-box;
   display: box;
 }
+.funnel-chart > li:before ,
+.funnel-chart > li:after {
+  position: absolute;
+  z-index: 0;
+  content: " ";
+  border-width: 60px 30px 0;
+  border-style: solid;
+  border-color: transparent;
+  /*
+   * 自动继承自父级 boder 颜色，
+   * 这就要求父级 li 不仅要定义 background-color，还要定义 border-color
+   * 参考 Custom Style Setting.
+   */
+  border-top-color: inherit;
+  display: block;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+.funnel-chart > li:before {
+  top: 0;
+  left: -30px;
+}
+.funnel-chart > li:after {
+  top: 0;
+  right: -30px;
+}
 .funnel-chart > li:first-child {
   background-color: #1398db;
+  border-color: #1398db;
   color: #fff;
 }
 .funnel-chart > li:nth-child(2) {
+  width: calc(100% - 60px);
   background-color: #19b1d8;
+  border-color: #19b1d8;
   color: #fff;
 }
 .funnel-chart > li:nth-child(3) {
+  width: calc(100% - (2 * 60px));
   background-color: #12dba5; /* #40eabd */
+  border-color: #12dba5; /* #40eabd */
   color: #fff;
 }
 .funnel-chart > li:nth-child(4) {
+  width: calc(100% - (3 * 60px));
   background-color: #93ca0d;
+  border-color: #93ca0d;
   color: #fff;
 }
 .funnel-chart > li:nth-child(5) {
+  width: calc(100% - (4 * 60px));
   background-color: #ff9a09; /* #a9db2a */
+  border-color: #ff9a09; /* #a9db2a */
+  color: #fff;
+}
+.funnel-chart > li:nth-child(6) {
+  width: calc(100% - (5 * 60px));
+  background-color: #a9db2a; /* #a9db2a */
+  border-color: #a9db2a; /* #a9db2a */
   color: #fff;
 }
 
 
 .funnel-chart > li > div {
-  padding: 0 10px;
+  position: relative;
+  z-index: 1;
   line-height: 60px;
 
   -moz-box-flex: 1.0;
   -webkit-box-flex: 1.0;
   box-flex: 1.0;
 }
-.funnel-chart > li > div.left {
-  background-color: #12dba5; /* #40eabd */
-  text-align: right;
+
+/* Custom Style Setting */
+.funnel-chart > li:nth-child(3):after {
+  border-top-color: #40eabd;
 }
-.funnel-chart > li > div.right {
+.funnel-chart > li:nth-child(3) > div.left {
+  text-align: right;
+  padding-right: 10px;
+}
+.funnel-chart > li:nth-child(3) > div.right {
   background-color: #40eabd;
   text-align: left;
+  padding-left: 10px;
 }
