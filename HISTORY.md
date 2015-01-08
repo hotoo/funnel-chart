@@ -1,7 +1,11 @@
-# History
+# CHANGELOG
 
 ---
 
 ## 0.2.0
 
-`new` It is the first version of funnel.
+* 较好的实现方式，但定制颜色时，需要定义背景色和边框颜色；而且多栏时需要重定义 `:after`。
+
+## 0.1.0
+
+* 简单的版本，使用统一的斜角覆盖，以形成漏斗状。

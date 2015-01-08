@@ -12,7 +12,6 @@ $ spm install funnel --save
 
 ## Usage
 
-```js
-var funnel = require('funnel');
-// use funnel
+```css
+@import('funnel');
 ```
