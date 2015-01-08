@@ -2,9 +2,6 @@
 
 ---
 
-<style>
-body{ background: #fcc;}
-</style>
 <link rel="stylesheet" href="../index.css" />
 
 ## Normal Chart
