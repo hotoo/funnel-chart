@@ -7,6 +7,7 @@
 }
 .funnel-chart {
   margin: 0 30px;
+  text-align: center;
   max-width: 680px;
   min-width: 400px;
 }
@@ -53,7 +54,8 @@
   top: 0;
   right: -30px;
 }
-.funnel-chart > li:first-child {
+.funnel-chart > li:nth-child(1) {
+  width: 100%;
   background-color: #1398db;
   border-color: #1398db;
   color: #fff;
