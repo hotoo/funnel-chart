@@ -1,6 +1,6 @@
 {
   "name": "funnel",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Funnel Charts via HTML and CSS3.",
   "keywords": ["Funnel", "Chart", "漏斗图"],
   "homepage": "https://github.com/hotoo/funnel-chart",
