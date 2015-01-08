@@ -1,0 +1,19 @@
+{
+  "name": "funnel",
+  "version": "0.2.0",
+  "description": "Funnel Charts via HTML.",
+  "keywords": [],
+  "homepage": "",
+  "author": "hotoo <hotoo.cn@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "index.css"
+  }
+}

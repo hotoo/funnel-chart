@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta name="generator" content="gvim" />
-<meta name="author" content="闲耘™ (hotoo.cn[AT]gmail.com)" />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="index.css" media="all" />
-<title>Index</title>
+# Demo
+
+---
+
 <style>
 body{ background: #fcc;}
 </style>
-</head>
-<body>
+<link rel="stylesheet" href="../index.css" />
 
+## Normal Chart
+
+````html
 <ol class="funnel-chart">
   <li><div>总进点人数 <strong>0</strong></div></li>
   <li><div>有效客流 <strong>0</strong></div></li>
@@ -29,9 +23,11 @@ body{ background: #fcc;}
     <div>试驾客流 <strong>0</strong></div>
   </li>
 </ol>
+````
 
-<hr />
+## Margined Chart
 
+````html
 <ol class="funnel-chart margined">
   <li><div>总进点人数 <strong>0</strong></div></li>
   <li><div>有效客流 <strong>0</strong></div></li>
@@ -45,5 +41,4 @@ body{ background: #fcc;}
     <div>试驾客流 <strong>0</strong></div>
   </li>
 </ol>
-</body>
-</html>
+````
